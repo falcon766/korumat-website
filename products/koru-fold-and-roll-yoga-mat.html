@@ -368,11 +368,7 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
 /*! onloadCSS. (onload callback for loadCSS) [c]2017 Filament Group, Inc. MIT License */
 function onloadCSS(a,b){function c(){!d&&b&&(d=!0,b.call(a))}var d;a.addEventListener&&a.addEventListener("load",c),a.attachEvent&&a.attachEvent("onload",c),"isApplicationInstalled"in navigator&&"onloadcssdefined"in a&&a.onloadcssdefined(c)}
 
-// Insert our stylesheet before our preload <link> tag
-var preload = document.querySelector('link[href="https://korumat.com/cdn/shop/t/9/assets/theme.scss.css?v=95694488973337580971759259813"]');
-var stylesheet = loadCSS('https://korumat.com/cdn/shop/t/9/assets/theme.scss.css?v=95694488973337580971759259813', preload);
-// Create a property to easily detect if the stylesheet is done loading
-onloadCSS(stylesheet, function() { stylesheet.loaded = true; });
+// CSS is already loaded via the <link> tag above, so no need to load it again via JavaScript
 </script>
 
 
