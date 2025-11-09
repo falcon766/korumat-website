@@ -393,6 +393,7 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
     border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 18px 42px rgba(15, 23, 42, 0.16);
+    margin: 0 auto;
   }
 
   .wired-static-group img {
@@ -403,8 +404,9 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
 
   .feature-row.wired-feature {
     align-items: center;
-    gap: 28px;
+    gap: 24px;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .feature-row.wired-feature .feature-row__text {
@@ -416,6 +418,22 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
     font-size: 2.35rem;
     line-height: 1.1;
     letter-spacing: -0.01em;
+  }
+
+  .feature-row-wrapper.wired-wrapper {
+    padding-top: 18px;
+    padding-bottom: 28px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    .feature-row.wired-feature {
+      flex-wrap: nowrap;
+      gap: 32px;
+    }
+
+    .feature-row.wired-feature .feature-row__item {
+      flex: 1 1 50%;
+    }
   }
 
   .static-hero {
@@ -452,7 +470,7 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
     border: 1px solid rgba(15, 23, 42, 0.06);
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 14px;
     text-align: left;
   }
 
@@ -482,7 +500,7 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
 
   .static-hero__inner .rte {
     font-size: 1.05rem;
-    line-height: 1.45;
+    line-height: 1.4;
   }
 
   .accent-bar {
@@ -515,6 +533,7 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
     .static-press__content {
       gap: 24px;
       padding: 0 20px;
+      justify-content: center;
     }
 
     .static-hero {
@@ -1147,7 +1166,7 @@ new normals
     <div class="static-hero__inner">
       <span class="accent-bar" aria-hidden="true"></span>
       <h2 class="h1">Why the Fold?</h2>
-      <div class="rte" style="margin-top: 16px;">
+      <div class="rte" style="margin-top: 10px;">
         <p>The flaw with traditional yoga mats: germs from the <strong>floor side</strong> of the mat roll right onto the <strong>practice side</strong> of the mat.</p>
       </div>
     </div>
@@ -1157,9 +1176,9 @@ new normals
     <div class="static-hero__inner">
       <span class="accent-bar" aria-hidden="true"></span>
       <h2 class="h1">The Koru Solution</h2>
-      <div class="rte" style="margin-top: 16px;">
+      <div class="rte" style="margin-top: 10px;">
         <p><strong>Koru Mat</strong> is a <strong>6mm</strong> high-quality yoga mat (<a href="http://www.sgs.com/en/testing"><strong>SGS Tested</strong></a>, <a href="https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Phthalates-Information"><strong>7P Free</strong></a>) with an embossed fold that keeps your practice side off the floor.</p>
-        <p style="margin-top: 12px;">Fold first, then roll: the clean side never touches the ground and pack-up takes half the time.</p>
+        <p style="margin-top: 8px;">Fold first, then roll: the clean side never touches the ground and pack-up takes half the time.</p>
       </div>
       <div class="static-hero__cta">
         <a href="products/koru-fold-and-roll-yoga-mat.html" class="btn">Get the Mat</a>
