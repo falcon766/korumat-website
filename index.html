@@ -348,7 +348,7 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 28px;
     padding: 60px 0;
   }
 
@@ -357,8 +357,8 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 40px;
-    max-width: 1024px;
+    gap: 32px;
+    max-width: 1080px;
     margin: 0 auto;
   }
 
@@ -374,7 +374,7 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
 
   .static-press__copy {
     text-align: center;
-    gap: 18px;
+    gap: 14px;
   }
 
   .static-press__logo img {
@@ -386,7 +386,9 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
   .wired-static-group {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
+    border-radius: 14px;
+    overflow: hidden;
   }
 
   .wired-static-group img {
@@ -395,13 +397,26 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
     height: auto;
   }
 
+  .feature-row.wired-feature {
+    align-items: center;
+    gap: 28px;
+  }
+
+  .feature-row.wired-feature .feature-row__text {
+    text-align: left;
+  }
+
+  .feature-row.wired-feature .h1 {
+    font-size: 2.35rem;
+  }
+
   .static-hero {
     position: relative;
     display: flex;
     align-items: center;
     min-height: 420px;
-    padding: 80px 24px;
-    color: #111;
+    padding: 92px 32px;
+    color: #0f172a;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -418,14 +433,19 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
   }
 
   .static-hero__inner {
-    max-width: 520px;
+    max-width: 540px;
     margin-left: auto;
     margin-right: auto;
-    background: rgba(255, 255, 255, 0.82);
-    padding: 36px;
-    border-radius: 12px;
-    box-shadow: 0 24px 48px rgba(15, 23, 42, 0.18);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.78);
+    padding: 38px 40px;
+    border-radius: 18px;
+    box-shadow: 0 24px 52px rgba(15, 23, 42, 0.18);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(15, 23, 42, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: left;
   }
 
   .static-hero--left .static-hero__inner {
@@ -436,6 +456,31 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
   .static-hero--right .static-hero__inner {
     margin-right: 0;
     margin-left: auto;
+  }
+
+  .static-hero--left {
+    justify-content: flex-start;
+  }
+
+  .static-hero--right {
+    justify-content: flex-end;
+  }
+
+  .static-hero__inner h2 {
+    font-size: 2.75rem;
+    letter-spacing: -0.02em;
+  }
+
+  .static-hero__inner .rte {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .accent-bar {
+    width: 52px;
+    height: 4px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #2dd4bf 0%, #0ea5e9 100%);
   }
 
   .static-hero__cta {
@@ -455,15 +500,15 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
 
   @media only screen and (max-width: 768px) {
     .static-press {
-      padding: 44px 0;
+      padding: 46px 0;
     }
 
     .static-press__content {
-      gap: 28px;
+      gap: 24px;
     }
 
     .static-hero {
-      padding: 56px 20px;
+      padding: 60px 22px;
       min-height: 0;
       background-position: center;
     }
@@ -473,8 +518,17 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
     }
 
     .static-hero__inner {
-      padding: 28px 24px;
+      padding: 30px 24px;
       margin: 0;
+      border-radius: 14px;
+    }
+
+    .static-hero__inner h2 {
+      font-size: 2.3rem;
+    }
+
+    .static-hero__inner .rte {
+      font-size: 1rem;
     }
   }
 </style>
@@ -1028,7 +1082,7 @@ new normals
   <div class="page-width feature-row-wrapper">
     
 
-    <div class="feature-row">
+    <div class="feature-row wired-feature">
       
         
       <div class="feature-row__item feature-row__item--overlap-images aos-init aos-animate" style="max-width: 700px" data-aos="">
@@ -1040,12 +1094,13 @@ new normals
     
       
 
-      <div class="feature-row__item text-center feature-row__text feature-row__text--left aos-init aos-animate" data-aos="">
+      <div class="feature-row__item feature-row__text feature-row__text--left aos-init aos-animate" data-aos="">
         
+          <div class="accent-bar" aria-hidden="true"></div>
           <div class="subheading appear-delay">Featured in Wired.IT</div>
         
         
-          <div class="h1 appear-delay-1">"The Most Hygienic Yoga mat"</div>
+          <div class="h1 appear-delay-1" style="margin-top: 12px;">"The Most Hygienic Yoga mat"</div>
         
         
           <div class="rte appear-delay-2"><p><em>"A simple and at the same time ingenious way to deal with the problem" of keeping your practice side of the mat off the dirty floor.</em></p></div>
@@ -1078,6 +1133,7 @@ new normals
 </div><div id="shopify-section-1596899269008" class="shopify-section index-section--flush">
   <section class="static-hero static-hero--right" style="background-image: url('/cdn/shop/files/AdobeStock_191000527_1512x_v=1613753254.jpeg');">
     <div class="static-hero__inner">
+      <span class="accent-bar" aria-hidden="true"></span>
       <h2 class="h1">Why the Fold?</h2>
       <div class="rte" style="margin-top: 16px;">
         <p>The flaw with traditional yoga mats: germs from the <strong>floor side</strong> of the mat roll right onto the <strong>practice side</strong> of the mat.</p>
@@ -1087,6 +1143,7 @@ new normals
 </div><div id="shopify-section-1596951188596" class="shopify-section index-section--flush">
   <section class="static-hero static-hero--right" style="background-image: url('/cdn/shop/files/KoruCurved11JustMat-7_1512x_v=1613754742.jpg');">
     <div class="static-hero__inner">
+      <span class="accent-bar" aria-hidden="true"></span>
       <h2 class="h1">The Koru Solution</h2>
       <div class="rte" style="margin-top: 16px;">
         <p><strong>Koru Mat</strong> is a <strong>6mm</strong> high-quality yoga mat (<a href="http://www.sgs.com/en/testing"><strong>SGS Tested</strong></a>, <a href="https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Phthalates-Information"><strong>7P Free</strong></a>) with an embossed fold that keeps your practice side off the floor.</p>
