@@ -344,48 +344,6 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
     content: "Loading";
   }
 
-  .static-press {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 28px;
-    padding: 64px 0;
-  }
-
-  .static-press__content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 32px;
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 0 32px;
-  }
-
-  .static-press__copy,
-  .static-press__logo {
-    flex: 1 1 320px;
-    min-width: 260px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .static-press__copy {
-    text-align: left;
-    gap: 14px;
-    max-width: 520px;
-    width: 100%;
-  }
-
-  .static-press__logo img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
   .wired-static-group {
     display: flex;
     flex-direction: column;
@@ -412,6 +370,13 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
   .feature-row.wired-feature .feature-row__text {
     text-align: left;
     max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .feature-row.wired-feature .feature-row__text .rte {
+    margin-top: 0;
   }
 
   .feature-row.wired-feature .h1 {
@@ -560,6 +525,25 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
     .static-hero__inner .rte {
       font-size: 1rem;
       line-height: 1.38;
+    }
+
+    .feature-row.wired-feature {
+      align-items: center;
+    }
+
+    .feature-row.wired-feature .feature-row__text {
+      text-align: center;
+    }
+
+    .feature-row.wired-feature .feature-row__text .accent-bar {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .feature-row.wired-feature .feature-row__text .rte {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 460px;
     }
   }
 </style>
@@ -1110,7 +1094,7 @@ new normals
 
 <div class="index-section">
 
-  <div class="page-width feature-row-wrapper">
+  <div class="page-width feature-row-wrapper wired-wrapper">
     
 
     <div class="feature-row wired-feature">
@@ -1146,21 +1130,42 @@ new normals
 
 
 </div><div id="shopify-section-1559687247066" class="shopify-section">
-  <section class="static-press">
-    <div class="static-press__content">
-      <div class="static-press__copy">
-        <span class="accent-bar" aria-hidden="true"></span>
-        <div class="subheading">HuffPost's "Best Products We Tried This Week"</div>
-        <div class="h1" style="margin-top: 12px;">"a genius concept"</div>
-        <div class="rte" style="margin-top: 16px;">
-          <p><em>"Perfect for any time, and especially perfect for the coronavirus era."</em></p>
+<div class="index-section">
+
+  <div class="page-width feature-row-wrapper">
+    
+
+    <div class="feature-row wired-feature wired-feature--reverse">
+      
+        
+      <div class="feature-row__item feature-row__text feature-row__text--left aos-init aos-animate" data-aos="">
+        
+          <div class="accent-bar" aria-hidden="true"></div>
+          <div class="subheading appear-delay">HuffPost's "Best Products We Tried This Week"</div>
+        
+        
+          <div class="h1 appear-delay-1" style="margin-top: 12px;">"a genius concept"</div>
+        
+        
+          <div class="rte appear-delay-2"><p><em>"Perfect for any time, and especially perfect for the coronavirus era."</em></p></div>
+        
+        
+      </div>
+
+      
+        
+      <div class="feature-row__item feature-row__item--image aos-init aos-animate" style="max-width: 520px" data-aos="">
+        <div class="wired-static-group">
+          <img src="/cdn/shop/files/HuffPost_logo_900x_v=1613753207.png" alt="HuffPost logo">
         </div>
       </div>
-      <div class="static-press__logo">
-        <img src="/cdn/shop/files/HuffPost_logo_900x_v=1613753207.png" alt="HuffPost logo">
-      </div>
+    
+      
     </div>
-  </section>
+  </div>
+
+</div>
+
 </div><div id="shopify-section-1596899269008" class="shopify-section index-section--flush">
   <section class="static-hero static-hero--right" style="background-image: url('/cdn/shop/files/AdobeStock_191000527_1512x_v=1613753254.jpeg');">
     <div class="static-hero__inner">
