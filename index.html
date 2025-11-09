@@ -349,7 +349,7 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
     align-items: center;
     justify-content: center;
     gap: 28px;
-    padding: 60px 0;
+    padding: 64px 0;
   }
 
   .static-press__content {
@@ -360,6 +360,7 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
     gap: 32px;
     max-width: 1080px;
     margin: 0 auto;
+    padding: 0 32px;
   }
 
   .static-press__copy,
@@ -375,6 +376,8 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
   .static-press__copy {
     text-align: center;
     gap: 14px;
+    max-width: 520px;
+    width: 100%;
   }
 
   .static-press__logo img {
@@ -386,9 +389,10 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
   .wired-static-group {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0;
     border-radius: 14px;
     overflow: hidden;
+    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.16);
   }
 
   .wired-static-group img {
@@ -400,14 +404,18 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
   .feature-row.wired-feature {
     align-items: center;
     gap: 28px;
+    flex-wrap: wrap;
   }
 
   .feature-row.wired-feature .feature-row__text {
     text-align: left;
+    max-width: 520px;
   }
 
   .feature-row.wired-feature .h1 {
     font-size: 2.35rem;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
   }
 
   .static-hero {
@@ -469,11 +477,12 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
   .static-hero__inner h2 {
     font-size: 2.75rem;
     letter-spacing: -0.02em;
+    line-height: 1.14;
   }
 
   .static-hero__inner .rte {
     font-size: 1.05rem;
-    line-height: 1.7;
+    line-height: 1.58;
   }
 
   .accent-bar {
@@ -505,6 +514,7 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
 
     .static-press__content {
       gap: 24px;
+      padding: 0 20px;
     }
 
     .static-hero {
@@ -525,10 +535,12 @@ await import("https://korumat.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
 
     .static-hero__inner h2 {
       font-size: 2.3rem;
+      line-height: 1.15;
     }
 
     .static-hero__inner .rte {
       font-size: 1rem;
+      line-height: 1.5;
     }
   }
 </style>
@@ -1085,10 +1097,9 @@ new normals
     <div class="feature-row wired-feature">
       
         
-      <div class="feature-row__item feature-row__item--overlap-images aos-init aos-animate" style="max-width: 700px" data-aos="">
+      <div class="feature-row__item feature-row__item--overlap-images aos-init aos-animate" style="max-width: 720px" data-aos="">
         <div class="wired-static-group">
-          <img src="/cdn/shop/files/wired_drop_900x_v=1613753206.png" alt="Koru mat closeup">
-          <img src="/cdn/shop/files/wired_drop_540x_v=1613753206.png" alt="Folded Koru Mat">
+          <img src="/cdn/shop/files/wired_drop_1080x_v=1613753206.png" alt="Koru mat closeup">
         </div>
       </div>
     
@@ -1119,6 +1130,7 @@ new normals
   <section class="static-press">
     <div class="static-press__content">
       <div class="static-press__copy">
+        <span class="accent-bar" aria-hidden="true"></span>
         <div class="subheading">HuffPost's "Best Products We Tried This Week"</div>
         <div class="h1" style="margin-top: 12px;">"a genius concept"</div>
         <div class="rte" style="margin-top: 16px;">
